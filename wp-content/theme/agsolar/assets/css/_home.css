@@ -45,7 +45,12 @@
 .verdere-innr{
 
 }
-
+p a{
+	color: #cd322c;
+}
+p a:hover{
+	color: #233d65;
+}
 
 
 
