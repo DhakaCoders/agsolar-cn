@@ -14,10 +14,10 @@
   <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
@@ -39,12 +39,15 @@
             <div class="hdr-logo">
               <a href="#">
                 <i>
-                  <img src="assets/images/logo.png">
+                  <img class="logo-main" src="assets/images/logo.png">
                 </i>
               </a>
             </div>
           </div>
-          <div class="hdr-right clearfix">        
+          <div class="hdr-right clearfix">
+            <div class="hdr-phn">
+              <a href="#">0599 330 110</a>
+            </div>
             <div class="header-rgt-menu">
               <nav class="hdr-nav">                
                 <div class="nav-opener show-sm">
@@ -54,11 +57,12 @@
                     <span></span>
                   </div>
                 </div>
+                
                 <ul class="ulc clearfix ">
                   <li><a href="#">AG Solar</a></li>
                   <li class="menu-item-has-children">
                     <a href="#">Oplossingen</a>
-                    <ul class="sub-menu">
+                    <ul class="ulc sub-menu">
                       <li><a href="#">Agrarisch</a></li>
                       <li><a href="#">Solar parken</a></li>
                       <li><a href="#">Industrie</a></li>
@@ -71,19 +75,32 @@
             </div>
           </div>
         </div>
-     </div>
+      </div>
     </div>
   </div>
-</header><!-- end of header -->
+</header>
 
 
-<section class="hdr-banner-wrp" style="overflow:hidden;">
+<section class="hdr-banner-wrp">
   <div class="hdr-banner-img animate-banner" style="background: url('assets/images/hdr-banner.jpg')"></div>
-  <div class="container-lg"> 
+  <div class="hdr-banner-bc">
+    <div class="container"> 
+      <div class="row">
+        <div class="col-sm-12">
+          <ul class="ulc">
+            <li><a href="#">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+  </div>  
+  <div class="container"> 
     <div class="row">
-      <div class="col-sm-12"> 
-        <div class="hdr-banner-des">
-          <strong>WHO WE ARE</strong>
+      <div class="col-sm-12">
+        <div class="hdr-banner-innr">
+          <div class="hdr-banner-des">
+            <span>your leader through the generation of  solar energy</span>
+          </div>         
         </div> 
       </div>
     </div>
