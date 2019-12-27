@@ -14,6 +14,26 @@ if (windowWidth > 768) {
 }
 
 
+/*
+--------------------
+To Top Button Js
+--------------------
+*/
+$(window).scroll(function() {
+  var $this = $(this);
+  if ( $(window).scrollTop() > 100 ) {
+    $('.to-top-btn').addClass('totopshow');
+  }else{
+    $('.to-top-btn').removeClass('totopshow');
+  } 
+});
+
+
+$('.to-top-btn').click(function() {
+    $('body,html').animate({scrollTop:0},800);
+}); 
+
+
 
 /**
 Slick slider
