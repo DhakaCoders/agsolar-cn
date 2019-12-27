@@ -18,3 +18,45 @@
 .sitemap-content ol li{
 	padding: 0 0 15px;
 }
+
+
+
+
+
+.hdr-banner-wrp{
+	position: relative;
+    overflow: hidden;
+}
+.hdr-banner-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat!important;
+    background-position: center center!important;
+    background-size: cover!important;
+}
+.hdr-banner-des{
+	padding: 490px 0 490px;
+	text-align: center;
+}
+.hdr-banner-des strong{
+    font-size: 80px;
+    font-weight: 300;
+    color:#fff;
+    line-height:96px;
+    letter-spacing: 1.6px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
