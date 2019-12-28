@@ -4,8 +4,8 @@
     right: 0;
     top: 0;
     z-index: 15;
-    padding: 25px 0;
-}
+    padding: 22px 0;
+} 
 .hdr-left {
     width: 30%;
     float: left;
@@ -26,7 +26,7 @@
 .hdr-right{
     width: 70%;
     float: left;
-    padding-top: 33px;
+    padding-top: 25px;
 }
 .header-rgt-menu{
     float: right;
@@ -39,21 +39,21 @@
 .hdr-right ul > li{
     display: inline-block;
     vertical-align: baseline;
+    position: relative;
     float: left;
     padding-left: 15px;
     padding-right: 15px;
 } 
-.hdr-right .header-rgt-menu .hdr-nav > ul > li > a{
+nav.hdr-nav > ul > li > a{
     color: #fff;
     font-size: 18px;
     text-decoration: none;
     padding: 13px;
+    font-weight: 500;
 }
-nav.hdr-nav ul > li,
 nav.hdr-nav > ul > li > a{
     display: inline-block;
     vertical-align: baseline;
-    position: relative;
 }
 nav.hdr-nav > ul > li.menu-item-has-children > ul.sub-menu{
     position: absolute;
@@ -84,13 +84,11 @@ nav.hdr-nav  ul.sub-menu > li > a{
     color: #fff;
     font-size: 18px;
     padding: 10px;
+    font-weight: 500;
 }
 .nav-opener{
     display: none;
 }
-
-
-
 nav.hdr-nav > ul > li > a:hover,
 nav.hdr-nav > ul > li.current-menu-item > a,
 nav.hdr-nav > ul > li.menu-item-has-children:hover > a,
@@ -154,4 +152,53 @@ nav.hdr-nav > ul > li.menu-item-has-children::after {
 }
 .hdr-phn a:hover::after {
 	color: #cd322c;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1199px){
+    .hdr-right {
+        padding-top: 10px;
+    }
+    .hdr-right ul > li {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+
+@media(max-width: 991px){
+
+
+}
+
+
+@media(max-width: 767px){
+
+
+}
+
+@media(max-width: 639px){
+
+}
+
+@media(max-width: 575px){
+
+
+}
+
+@media(max-width: 479px){
+
+
+}
+
+@media(max-width: 359px){
+
 }
