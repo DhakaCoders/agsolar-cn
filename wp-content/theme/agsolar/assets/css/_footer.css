@@ -12,17 +12,15 @@ ftr-top-wrp
 	padding-bottom: 115px;
 	position: relative;
 }
-.to-top-btn{
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	width: 110px;
-	height: 65px;
-	background: #da291c;
-	cursor: pointer;
+.to-top-btn {
+    position: fixed;
+    right: 0;
+    bottom: 25%;
+    width: 110px;
+    height: 65px;
+    background: #da291c;
+    cursor: pointer;
+    z-index: 5;
 }
 .to-top-btn:after{
 	content: "";
