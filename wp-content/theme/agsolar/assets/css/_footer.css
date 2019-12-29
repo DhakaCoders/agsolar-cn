@@ -36,6 +36,13 @@ ftr-top-wrp
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
 }
+.ftr-info-lft{
+	padding-left: 12px;
+}
+.ftr-btm-dsc{
+	padding-left: 12px;
+	padding-right: 12px;
+}
 .ftr-info,
 .ftr-logo{
 	float: left;
@@ -103,5 +110,73 @@ ftr-top-wrp
 	color: #3c3c3b;
 	font-size: 18px;
 	line-height: 20px;
+}
+
+
+
+@media(max-width: 1199px){ 
+	
+
+}
+
+
+@media(max-width: 991px){
+	
+
+
+}
+
+
+@media(max-width: 767px){
+	.ftr-info, .ftr-logo {
+	    float: left;
+	    width: 100%;
+	}
+	.ftr-btm-wrp {
+	    padding-top: 28px;
+	    padding-bottom: 25px;
+	}
+	.to-top-btn {
+	    width: 75px;
+	    height: 65px;
+	}
+	.to-top-btn:after {
+	    content: "";
+	    position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    background-size: 34px 20px;
+	    width: 34px;
+	    height: 20px;
+	    transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	    -webkit-transform: translate(-50%,-50%);
+	}
+
+}
+
+
+
+@media(max-width: 639px){
+
+}
+
+
+
+@media(max-width: 575px){
+
+
+}
+
+
+@media(max-width: 479px){
+
+
+}
+
+
+
+@media(max-width: 359px){
+
 }
 
