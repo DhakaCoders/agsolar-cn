@@ -21,7 +21,7 @@
 
 
 
-
+.page-banner-wrp,
 .hdr-banner-wrp{
 	position: relative;
 	overflow:hidden;
@@ -73,6 +73,10 @@
 .page-banner-wrp .hdr-banner-bc{
 	background: #717894;
 	opacity: .7;
+}
+.page-banner-wrp .hdr-banner-img{
+	min-height: 300px;
+	position: relative
 }
 
 .hdr-banner-bc a{
@@ -146,10 +150,10 @@
 	    padding-bottom: 100px;
 	}
 	.page-een-pakkende-sec .een-pakkende-innr {
-	    padding-right: 10px;
+	    padding-right: 0;
 	}
 	.page-een-pakkende-sec .een-pakkende-top-block {
-	    padding-bottom: 35px;
+	    padding-bottom: 25px;
 	}
 	.hdr-banner-innr {
 	    min-height: 800px;

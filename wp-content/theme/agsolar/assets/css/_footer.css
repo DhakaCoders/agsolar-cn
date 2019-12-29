@@ -127,17 +127,16 @@ ftr-top-wrp
 
 
 @media(max-width: 991px){
-	
+	.ftr-info,
+	.ftr-logo {
+	    width: 100%;
+	}
 
 
 }
 
 
 @media(max-width: 767px){
-	.ftr-info, .ftr-logo {
-	    float: left;
-	    width: 100%;
-	}
 	.ftr-btm-wrp {
 	    padding-top: 28px;
 	    padding-bottom: 25px;
@@ -157,6 +156,9 @@ ftr-top-wrp
 	    transform: translate(-50%,-50%);
 	    -ms-transform: translate(-50%,-50%);
 	    -webkit-transform: translate(-50%,-50%);
+	}
+	.ftr-info-dsc{
+		padding-top: 30px
 	}
 
 }
