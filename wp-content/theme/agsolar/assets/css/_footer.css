@@ -160,6 +160,10 @@ ftr-top-wrp
 	.ftr-info-dsc{
 		padding-top: 30px
 	}
+	.ftr-btm-dsc p {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
 
 }
 
