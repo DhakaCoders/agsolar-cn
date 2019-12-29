@@ -115,7 +115,13 @@ ftr-top-wrp
 
 
 @media(max-width: 1199px){ 
-	
+	.ftr-info-lft {
+	    padding-left: 0;
+	}
+	.ftr-btm-dsc {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
 
 }
 
