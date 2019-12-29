@@ -24,14 +24,7 @@
 
 .hdr-banner-wrp{
 	position: relative;
-    overflow: hidden;
-	min-height: 1046px;
 	overflow:hidden;
-}
-.page-banner-wrp{
-	min-height: 300px !important;
-	position: relative;
-    overflow: hidden;
 }
 .hdr-banner-img{
     position: absolute;
@@ -141,7 +134,10 @@
 	    padding-right: 20px;
 	}
 
-
+	.hdr-banner-des {
+	    right: 0;
+	    left: auto;
+	}
 }
 
 
@@ -155,25 +151,34 @@
 	.page-een-pakkende-sec .een-pakkende-top-block {
 	    padding-bottom: 35px;
 	}
-
+	.hdr-banner-innr {
+	    min-height: 800px;
+	    position: relative;
+	}
 
 }
-
-
 
 @media(max-width: 639px){
 
 }
 
-
-
 @media(max-width: 575px){
+	.hdr-banner-innr {
+	    min-height: 600px;
+	    position: relative;
+	}
 }
 
-
 @media(max-width: 479px){
-
-
+	.hdr-banner-bc {
+	    display: none;
+	}
+	.hdr-banner-des {
+	    padding: 35px 25px 30px 20px;
+	}
+	.hdr-banner-des {
+	    bottom: 10%;
+	}
 }
 
 

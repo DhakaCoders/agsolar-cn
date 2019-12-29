@@ -1,6 +1,17 @@
 (function($) {
 
 	
+//sm-popup-main-menu
+var windowWidth = $(window).width();
+if (windowWidth <= 991) {
+  if( $('.sm-menu-humberger-btn').length ){
+    $('.sm-menu-humberger-btn').on('click', function(){
+    $('.sm-popup-main-menu-wrap').fadeToggle(500);
+    });
+  };
+}
+
+
  
 /**
 Responsive on 767px
