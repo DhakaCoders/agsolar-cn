@@ -52,10 +52,22 @@ p a:hover{
 
 
 
-
+@media(max-width: 1299px){
+	.verdere-innr, 
+	.uitgelichte-innr, 
+	.een-pakkende-innr {
+	    padding-left: 12px;
+	    padding-right: 40px;
+	}
+}
 
 @media(max-width: 1199px){
-
+	.verdere-innr, 
+	.uitgelichte-innr, 
+	.een-pakkende-innr {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
 }
 
 @media(max-width: 991px){
@@ -63,11 +75,24 @@ p a:hover{
 }
 
 @media(max-width: 767px){
+	.een-pakkende-sec {
+	    padding: 40px 0 45px;
+	}
+	.een-pakkende-sec .een-pakkende-top-block {
+	    padding-bottom: 30px;
+	}
+	.verdere-sec {
+	    padding: 40px 0 45px;
+	}
 
 }
 
 @media(max-width: 639px){
-
+	.uitgelichte-btm-block i {
+	    max-width: 102px;
+	    display: inline-block;
+	    vertical-align: baseline;
+	}
 }
 
 @media(max-width: 575px){
