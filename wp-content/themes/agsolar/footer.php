@@ -32,10 +32,15 @@
       <div class="col-sm-12">
         <div class="ftr-btm-dsc clearfix">
           <p>&copy;2019 AG Solar, all rights reserved</p>
-          <ul class="clearfix hide-xs">
-            <li><a href="#">disclaimer</a></li>
-            <li><a href="#">contactinformatie</a></li>
-          </ul>
+          <?php 
+            $mmenuOptions = array( 
+                'theme_location' => 'cbv_ftmain_menu', 
+                'menu_class' => 'clearfix hide-xs',
+                'container' => 'ccmnav',
+                'container_class' => 'ccmainnav'
+              );
+            wp_nav_menu( $mmenuOptions ); 
+          ?>
         </div>
       </div>
     </div>

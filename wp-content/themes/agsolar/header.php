@@ -52,19 +52,15 @@
             </div>
             <div class="header-rgt-menu">
               <nav class="hdr-nav">               
-                <ul class="ulc clearfix ">
-                  <li><a href="#">AG Solar</a></li>
-                  <li class="menu-item-has-children">
-                    <a href="#">Oplossingen</a>
-                    <ul class="ulc sub-menu">
-                      <li><a href="#">Agrarisch</a></li>
-                      <li><a href="#">Solar parken</a></li>
-                      <li><a href="#">Industrie</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Projecten</a></li>
-                  <li><a href="#">Carriere</a></li>
-                </ul>
+                <?php 
+                  $cmenuOptions = array( 
+                      'theme_location' => 'cbv_main_menu', 
+                      'menu_class' => 'clearfix ulc',
+                      'container' => 'cmnav',
+                      'container_class' => 'cmainnav'
+                    );
+                  wp_nav_menu( $cmenuOptions ); 
+                ?>
               </nav>
             </div>
           </div>
@@ -78,20 +74,15 @@
           </div>
           <div class="sm-popup-main-menu-wrap">
             <nav class="sm-popup-main-nav text-right clearfix">
-              <ul class="clearfix ulc">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">AG Solar</a></li>
-                <li class="menu-item-has-children">
-                  <a href="#">Oplossingen</a>
-                  <ul class="sub-menu ulc">
-                    <li><a href="#">Agrarisch</a></li>
-                    <li><a href="#">Solar parken</a></li>
-                    <li><a href="#">Industrie</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Projecten</a></li>
-                <li><a href="#">Carriere</a></li>
-              </ul>
+              <?php 
+                $mmenuOptions = array( 
+                    'theme_location' => 'cbv_mbmain_menu', 
+                    'menu_class' => 'clearfix ulc',
+                    'container' => 'mcmnav',
+                    'container_class' => 'mcmainnav'
+                  );
+                wp_nav_menu( $mmenuOptions ); 
+              ?>
             </nav>
           </div>
           <div class="sm-phn-con show-sm">
