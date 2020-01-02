@@ -1,3 +1,22 @@
+<?php 
+  $cominfo = get_field('company_info', 'options');
+  $logoObj = get_field('ftlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+
+  $spacialArry = array(".", "/", "+", "-", " ", ")", "(");$replaceArray = '';
+  $adres = get_field('address', 'options');
+  $e_mailadres = get_field('femail', 'options');
+  $gmapsurl = get_field('google_maps', 'options');
+  $show_telefoon = get_field('telephone', 'options');
+  $telefoon = trim(str_replace($spacialArry, $replaceArray, $show_telefoon));
+  $copyright_text = get_field('copyright_text', 'options');
+  $gmaplink = !empty($gmapsurl)?$gmapsurl: 'javascript:void()';
+
+?>
 <footer class="footer-wrap">
   <div class="ftr-top-wrp">
     <div class="to-top-btn"></div>
@@ -6,21 +25,25 @@
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="ftr-info-lft clearfix">
           <div class="ftr-logo">
-            <a href="#">
-              <img src="<?php echo THEME_URI; ?>/assets/images/ftr-logo.png">
+            <a href="<?php echo esc_url( home_url('/') );?>">
+              <?php echo $logo_tag; ?>
             </a>
           </div>
           <div class="ftr-info">
-            <span><a href="#">AG Solar BV <br> Krommewijk 15J <br> 9501LA Stadskanaal</a></span>
-            <span><a href="callto:0599 123 456">T: 0599 123 456</a></span>
-            <span><a href="mailto:info@agsolar.nl">E: info@agsolar.nl</a></span>
+            <?php 
+              if( !empty( $adres ) ) printf('<span><a href="%s" target="_blank">%s</a></span>', $gmaplink, $adres); 
+              if( !empty( $show_telefoon ) ) printf('<span><a href="tel:%s">T: %s</a></span>', $telefoon, $show_telefoon); 
+              if( !empty( $e_mailadres ) ) printf('<span><a href="mailto:%s">E: %s</a></span>', $e_mailadres, $e_mailadres); 
+            ?>     
           </div>
         </div>
       </div>
       <div class="col-md-8 col-sm-6 col-xs-12">
         <div class="ftr-info-dsc">
-          <h2>Een pakkende eerste titel</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla metus, interdum quis porttitor eu, tincidunt faucibus enim. Cras eleifend eget turpis eget volutpat. Phasellus tempus ut ligula semper eleifend. Etiam id ligula a odio dapibus viverra et ac enim. Sed vestibulum lorem sem, vel auctor lectus dapibus eget</p>
+        <?php 
+          if(!empty($cominfo['title'])) printf('<h2>%s</h2>', $cominfo['title']);
+          if($cominfo['desc']) echo wpautop( $cominfo['desc']);
+        ?>
         </div>
       </div>
     </div>
@@ -31,8 +54,7 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="ftr-btm-dsc clearfix">
-          <p>&copy;2019 AG Solar, all rights reserved</p>
-          <?php 
+          <?php if( !empty( $copyright_text ) ) printf( '<span>%s</span>', $copyright_text);
             $mmenuOptions = array( 
                 'theme_location' => 'cbv_ftmain_menu', 
                 'menu_class' => 'clearfix hide-xs',
