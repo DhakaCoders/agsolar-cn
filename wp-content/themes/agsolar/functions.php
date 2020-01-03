@@ -22,7 +22,7 @@ if( !function_exists('cbv_theme_setup') ){
 		if(function_exists('add_theme_support')) {
 			add_theme_support('category-thumbnails');
 		}
-    //add_image_size( 'hmslider', 1368, 432, true );
+    add_image_size( 'pgbanner', 1350, 300, true );
 		
 		// add size to media uploader
 		add_filter( 'image_size_names_choose', 'cbv_custom_image_sizes' );
@@ -56,12 +56,11 @@ function cbv_theme_scripts(){
   include_once( THEME_DIR . '/enq-scripts/fancybox.php' );
 	include_once( THEME_DIR . '/enq-scripts/slick.php' );
 	include_once( THEME_DIR . '/enq-scripts/matchheight.php' );
-  include_once( THEME_DIR . '/enq-scripts/shuffle.php' );
   include_once( THEME_DIR . '/enq-scripts/animate.php' );
 	include_once( THEME_DIR . '/enq-scripts/theme.default.php' );
 }
 
-//add_action( 'wp_enqueue_scripts', 'cbv_theme_scripts');
+add_action( 'wp_enqueue_scripts', 'cbv_theme_scripts');
 
 /**
 Includes->>
@@ -247,4 +246,3 @@ function printr($args){
 	print_r ($args);
 	echo '</pre>';
 }
-

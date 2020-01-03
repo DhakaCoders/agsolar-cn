@@ -1,5 +1,5 @@
 <?php 
-  $cominfo = get_field('company_info', 'options');
+  $cominfoid = get_field('company_info', 'options');
   $logoObj = get_field('ftlogo', 'options');
   if( is_array($logoObj) ){
     $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
@@ -39,12 +39,25 @@
         </div>
       </div>
       <div class="col-md-8 col-sm-6 col-xs-12">
+      <?php
+
+        if( !empty( $cominfoid ) ){
+          $cQuery = new WP_Query(array(
+            'post_type' => 'page',
+            'posts_per_page'=> 1,
+            'post__in' => array($cominfoid)
+          ));
+        if( $cQuery->have_posts() ){
+      ?>
         <div class="ftr-info-dsc">
         <?php 
-          if(!empty($cominfo['title'])) printf('<h2>%s</h2>', $cominfo['title']);
-          if($cominfo['desc']) echo wpautop( $cominfo['desc']);
+          while($cQuery->have_posts()): $cQuery->the_post(); 
+            the_content();
+          endwhile;
         ?>
+
         </div>
+      <?php } wp_reset_postdata(); } ?>
       </div>
     </div>
    </div> 
@@ -69,21 +82,6 @@
    </div> 
   </div>
 </footer>
-
-
-
-<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
-<script src="https://code.jquery.com/jquery-migrate-3.0.0.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/bootstrap.min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/bootstrap-select.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/ie10-viewport-bug-workaround.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/fancybox3/dist/jquery.fancybox.min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/slick.slider/slick.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo2-QJ7RdCkLw3NFZEu71mEKJ_8LczG-c"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/jquery.matchHeight-min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/wow.min.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/app.js"></script>
-<script src="<?php echo THEME_URI; ?>/assets/js/main.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>
