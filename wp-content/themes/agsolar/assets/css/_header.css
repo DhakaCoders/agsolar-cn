@@ -5,7 +5,7 @@
     top: 0;
     z-index: 15;
     padding: 22px 0;
-} 
+}  
 .hdr-left {
     width: 30%;
     float: left;
@@ -92,11 +92,13 @@ nav.hdr-nav  ul.sub-menu > li > a{
 nav.hdr-nav > ul > li > a:hover,
 nav.hdr-nav > ul > li.current-menu-item > a,
 nav.hdr-nav > ul > li.menu-item-has-children:hover > a,
-/* nav.hdr-nav > ul > li.menu-item-has-children:hover > ul  a, */
-nav.hdr-nav > ul > li.menu-item-has-children > ul a:hover{
+nav.hdr-nav > ul > li.menu-item-has-children:hover > ul  a/* , 
+nav.hdr-nav > ul > li.menu-item-has-children > ul a:hover*/{
     background: #cd322c;
 }
-
+nav.hdr-nav > ul > li.menu-item-has-children > ul a:hover {
+    background: #c40d06;
+}
 nav.hdr-nav > ul > li.menu-item-has-children{
     position: relative;
 }
@@ -190,7 +192,7 @@ nav.hdr-nav > ul > li.menu-item-has-children::after {
         top: 0;
         left: 0;
         bottom: 0;
-        right: 78px;
+        right: 76px;
         background: #da291c;
         opacity: .9
     }
@@ -279,6 +281,7 @@ nav.hdr-nav > ul > li.menu-item-has-children::after {
     .sm-mail-innr{
         position: relative;
         height: 100%;
+        z-index: 2
     }
 
 }
