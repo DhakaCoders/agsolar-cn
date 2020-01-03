@@ -216,9 +216,6 @@ $('.footer-wrap .go-top-btn').on('click', function(e){
   $('html, body').animate( {scrollTop:0}, '500' );
 });
 
-
-  new WOW().init();
-
 })(jQuery);
 
 
