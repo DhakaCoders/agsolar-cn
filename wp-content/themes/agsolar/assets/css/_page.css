@@ -37,7 +37,7 @@
     background-size: cover!important;
 }
 .hdr-banner-innr{
-	min-height: 1046px;
+	height: 1046px;
 	position: relative
 }
 .hdr-banner-des{
@@ -121,8 +121,8 @@
   overflow: hidden;
 }
 .video-wrp{
-  height: 1046px!important;
-  width: 100%!important;
+  height: 1046px;
+  width: 100%;
   overflow: hidden;
 }
 .home-bnr-video{
@@ -183,6 +183,10 @@ video.home-bnr-video::-webkit-media-controls {
 	    right: 0;
 	    left: auto;
 	}
+	.video-wrp,
+	.hdr-banner-innr {
+	    height: 800px;
+	}
 }
 
 
@@ -198,8 +202,7 @@ video.home-bnr-video::-webkit-media-controls {
 	}
 	.video-wrp,
 	.hdr-banner-innr {
-	    min-height: 800px;
-	    position: relative;
+	    height: 600px;
 	}
 
 }
@@ -209,11 +212,6 @@ video.home-bnr-video::-webkit-media-controls {
 }
 
 @media(max-width: 575px){
-	.video-wrp,
-	.hdr-banner-innr {
-	    min-height: 600px;
-	    position: relative;
-	}
 }
 
 @media(max-width: 479px){
