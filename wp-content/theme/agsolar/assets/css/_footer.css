@@ -12,7 +12,7 @@ ftr-top-wrp
 	padding-bottom: 115px;
 	position: relative;
 }
-.to-top-btn {
+.to-top-btn{
     position: fixed;
     right: 0;
     bottom: 25%;
@@ -21,6 +21,10 @@ ftr-top-wrp
     background: #da291c;
     cursor: pointer;
     z-index: 5;
+    display: none;
+}
+.totopshow.to-top-btn{
+	display: block;
 }
 .to-top-btn:after{
 	content: "";

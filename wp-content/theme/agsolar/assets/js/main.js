@@ -32,7 +32,7 @@ To Top Button Js
 */
 $(window).scroll(function() {
   var $this = $(this);
-  if ( $(window).scrollTop() > 100 ) {
+  if ( $(window).scrollTop() > 1600 ) {
     $('.to-top-btn').addClass('totopshow');
   }else{
     $('.to-top-btn').removeClass('totopshow');
@@ -40,9 +40,16 @@ $(window).scroll(function() {
 });
 
 
+
 $('.to-top-btn').click(function() {
     $('body,html').animate({scrollTop:0},800);
 }); 
+
+
+/*$('.to-top-btn').add('click', function(){
+    $('.ftr-top-wrp').addClass('to-top-cls');
+    $('.ftr-top-wrp').removeClass('to-top-cls');
+});*/
 
 
 
