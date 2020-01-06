@@ -14,11 +14,7 @@
 .hdr-left .hdr-logo a{
     display: inline-block;
     vertical-align: baseline;
-} 
-.hdr-left .hdr-logo a{
     max-width: 338px;
-    display: inline-block;
-	vertical-align: baseline;
 }
 .hdr-left .hdr-logo img{
     width: 100%;
@@ -304,7 +300,7 @@ nav.hdr-nav > ul > li.menu-item-has-children::after {
 }
 
 @media(max-width: 479px){
-    .hdr-left .hdr-logo a {
+    .hdr-left .hdr-logo i {
         max-width: 230px;
     }
     .sm-popup-main-nav ul a {
