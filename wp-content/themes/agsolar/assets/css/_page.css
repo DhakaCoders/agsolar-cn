@@ -120,11 +120,6 @@
   position: relative;
   overflow: hidden;
 }
-.video-wrp{
-  height: 1046px;
-  width: 100%;
-  overflow: hidden;
-}
 .home-bnr-video{
   position: absolute;
   min-height: 100%;
@@ -183,7 +178,6 @@ video.home-bnr-video::-webkit-media-controls {
 	    right: 0;
 	    left: auto;
 	}
-	.video-wrp,
 	.hdr-banner-innr {
 	    height: 800px;
 	}
@@ -200,7 +194,6 @@ video.home-bnr-video::-webkit-media-controls {
 	.page-een-pakkende-sec .een-pakkende-top-block {
 	    padding-bottom: 25px;
 	}
-	.video-wrp,
 	.hdr-banner-innr {
 	    height: 600px;
 	}
