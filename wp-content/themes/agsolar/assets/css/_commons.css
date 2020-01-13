@@ -238,3 +238,37 @@ form  .dropdown-menu li a{
 	background-color: #710023;
 }
 
+
+/**
+Page builder container
+# the data's for different layouts
+1. standard - data-stretch-type="" / .panel-grid.panel-no-style
+2. full width - data-stretch-type="full"
+3. full width stretched - data-stretch-type="full-stretched"
+4. full width stretched padded - data-stretch-type="full-stretched-padded"
+*/
+.panel-grid.panel-has-style .panel-row-style,
+.panel-grid.panel-no-style{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px!important;
+    padding-right: 15px!important;    
+}
+.panel-grid.panel-has-style .panel-row-style[data-stretch-type="full"],
+.panel-grid.panel-has-style .panel-row-style[data-stretch-type="full-stretched"]{
+    max-width: initial;
+}
+.panel-grid.panel-has-style .panel-row-style[data-stretch-type="full"] .panel-grid-cell{
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.panel-grid.panel-has-style .panel-row-style[data-stretch-type="full-stretched"]{
+    padding-left: 0!important;
+    padding-right: 0!important;    
+}
+.panel-grid.panel-has-style .panel-row-style[data-stretch-type="full-stretched"] .panel-grid-cell{
+    max-width: initial;
+}
+.panel-grid.panel-has-style .panel-row-style[data-stretch-type="full-stretched-padded"]{}
